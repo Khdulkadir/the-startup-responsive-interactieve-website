@@ -88,16 +88,6 @@ header h1 {
 
 /*---OVERVIEW SECTION---*/
 
-/* section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 50px 10px;
-  flex-wrap: wrap;
-  flex-direction: row;
-} */
-
 div.overview-wrapper {
   display: flex;
   align-items: center;
