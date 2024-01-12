@@ -103,7 +103,7 @@ div.overview-wrapper {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  padding: 50px 10px;
+  padding: 30px 10px;
   flex-wrap: wrap;
   max-width: 1200px;
   flex-direction: row;
@@ -257,6 +257,14 @@ footer img {
   width: 100px;
 }
 
-* {
+/* .fase-wrapper,
+.overview-wrapper {
   flex-direction: column !important;
 }
+
+@media only screen and (min-width: 720px) {
+  .fase-wrapper,
+  .overview-wrapper {
+    flex-direction: unset !important;
+  }
+} */
