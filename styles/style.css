@@ -59,17 +59,30 @@ a {
 
 header {
   background-color: var(--accent-color-blue);
+}
+
+div.header-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   padding: 20px 10px;
   color: white;
   gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header img {
   width: 150px;
+  padding-bottom: 20px;
+}
+
+div.logo-wrapper {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul {
@@ -86,6 +99,87 @@ header h1 {
   font: var(--heading-font);
 }
 
+/*---MOBILE MENU---*/
+
+div.menu-toggle {
+  display: none;
+}
+
+i.fa-xmark {
+  display: none;
+}
+
+@media screen and (max-width: 1145px) {
+  div.header-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 700px;
+  }
+
+  div.logo-wrapper {
+    align-items: unset;
+  }
+
+  header img {
+    width: 75px;
+  }
+
+  i.fa-bars {
+    vertical-align: middle;
+    line-height: 1.5;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  i.fa-xmark {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: 20px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  div.menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    visibility: hidden;
+    height: 100vh;
+    position: fixed;
+    background-color: #001863;
+    width: 250px;
+    z-index: 1;
+    padding-left: 20px;
+    right: -250px;
+    transition: 0.3s;
+    flex-direction: column;
+    top: 0;
+    padding-top: 50px;
+  }
+
+  .show {
+    visibility: visible;
+    right: 0;
+  }
+
+  .stop-scroll {
+    overflow-y: hidden;
+  }
+
+  ul.menu li {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  div.header-wrapper {
+    max-width: 350px;
+  }
+}
+
 /*---OVERVIEW SECTION---*/
 
 div.overview-wrapper {
@@ -95,7 +189,7 @@ div.overview-wrapper {
   gap: 30px;
   padding: 30px 10px;
   flex-wrap: wrap;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   flex-direction: row;
   margin: 0 auto;
 }
