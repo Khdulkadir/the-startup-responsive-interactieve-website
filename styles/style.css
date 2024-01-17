@@ -249,14 +249,14 @@ section .fase-container {
   transition: 0.5s;
 }
 
-section .fase-container:nth-of-type(3),
-section .fase-container:nth-of-type(4),
-section .fase-container:nth-of-type(5) {
+section .fase-container.development-fase,
+section .fase-container.test-fase,
+section .fase-container.oplever-fase {
   opacity: 0.5;
 }
 
-section .fase-container:hover:nth-of-type(1),
-section .fase-container:hover:nth-of-type(2) {
+section .fase-container.opstart-fase:hover,
+section .fase-container.design-fase:hover {
   background-color: var(--primary-color-blue);
   cursor: pointer;
 }
@@ -289,25 +289,25 @@ section .fase-container i.fa-arrow-right-long {
   transition: 0.5s;
 }
 
-section .fase-container:hover:nth-of-type(1) i.fa-arrow-right-long,
-section .fase-container:hover:nth-of-type(2) i.fa-arrow-right-long {
+section .fase-container.opstart-fase:hover i.fa-arrow-right-long,
+section .fase-container.design-fase:hover i.fa-arrow-right-long {
   margin-left: 250px;
 }
 
-section .fase-container:hover:nth-of-type(1) i.fa-arrow-right-long,
-section .fase-container:hover:nth-of-type(2) i.fa-arrow-right-long,
-section .fase-container:hover:nth-of-type(1) h2,
-section .fase-container:hover:nth-of-type(2) h2 {
+section .fase-container.opstart-fase:hover i.fa-arrow-right-long,
+section .fase-container.design-fase:hover i.fa-arrow-right-long,
+section .fase-container.opstart-fase:hover h2,
+section .fase-container.design-fase:hover h2 {
   color: white;
 }
 
-section .fase-container:hover:nth-of-type(1) p,
-section .fase-container:hover:nth-of-type(2) p,
+section .fase-container.opstart-fase:hover p,
+section .fase-container.design-fase:hover p,
 section
-  .fase-container:hover:nth-of-type(1)
+  .fase-container.opstart-fase:hover
   i:not(.fa-circle-check):not(.fa-spinner),
 section
-  .fase-container:hover:nth-of-type(2)
+  .fase-container.design-fase:hover
   i:not(.fa-circle-check):not(.fa-spinner) {
   color: #a8a8a8;
 }
