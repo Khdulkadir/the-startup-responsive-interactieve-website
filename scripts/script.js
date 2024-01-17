@@ -1,5 +1,5 @@
 const menu = document.querySelector(".menu");
-const menuToggle = document.querySelector(".menu-toggle");
+const menuToggle = document.querySelector(".fa-bars");
 const menuClose = document.querySelector(".fa-xmark");
 const body = document.body;
 
