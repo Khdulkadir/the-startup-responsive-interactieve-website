@@ -94,10 +94,13 @@ nav ul {
 nav ul li {
   font: var(--paragraph-font-bold);
   transition: 0.3s;
+  text-decoration: underline transparent;
+  text-underline-offset: 5px;
 }
 
 nav ul li:hover {
-  border-bottom: 2px solid white;
+  text-decoration: underline solid white;
+  text-underline-offset: 5px;
 }
 
 header h1 {
