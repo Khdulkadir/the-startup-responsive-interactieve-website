@@ -93,6 +93,11 @@ nav ul {
 
 nav ul li {
   font: var(--paragraph-font-bold);
+  transition: 0.3s;
+}
+
+nav ul li:hover {
+  border-bottom: 2px solid white;
 }
 
 header h1 {
@@ -194,19 +199,19 @@ div.overview-wrapper {
   margin: 0 auto;
 }
 
-section .overview-container {
+div .overview-container {
   border: 3px #ededed solid;
   min-width: 300px;
 }
 
-section .overview-container h2 {
+div .overview-container h2 {
   padding-top: 20px;
   padding-bottom: 20px;
   font: var(--heading-font);
   text-align: center;
 }
 
-section .overview-container p {
+div .overview-container p {
   padding-top: 10px;
   padding-bottom: 10px;
   font: var(--paragraph-font-bold);
@@ -215,7 +220,7 @@ section .overview-container p {
   color: white;
 }
 
-section .overview-container:nth-of-type(2) p {
+div .overview-container:nth-of-type(2) p {
   background-color: var(--primary-color-green);
 }
 
@@ -232,11 +237,11 @@ div.fase-wrapper {
   margin: 0 auto;
 }
 
-section.fase-section {
+div.fase-section {
   background-color: #ededed;
 }
 
-section .fase-container {
+div .fase-container {
   border: 3px #dbdbdb solid;
   min-width: 350px;
   background-color: white;
@@ -249,24 +254,24 @@ section .fase-container {
   transition: 0.5s;
 }
 
-section .fase-container.development-fase,
-section .fase-container.test-fase,
-section .fase-container.oplever-fase {
+div .fase-container.development-fase,
+div .fase-container.test-fase,
+div .fase-container.oplever-fase {
   opacity: 0.5;
 }
 
-section .fase-container.opstart-fase:hover,
-section .fase-container.design-fase:hover {
+div .fase-container.opstart-fase:hover,
+div .fase-container.design-fase:hover {
   background-color: var(--primary-color-blue);
   cursor: pointer;
 }
 
-section .fase-container i {
+div .fase-container i {
   font-size: 30px;
   color: #686868;
 }
 
-section .fase-container i.fa-circle-check {
+div .fase-container i.fa-circle-check {
   color: var(--primary-color-green);
   position: absolute;
   top: 10px;
@@ -274,7 +279,7 @@ section .fase-container i.fa-circle-check {
   font-size: 20px;
 }
 
-section .fase-container i.fa-spinner {
+div .fase-container i.fa-spinner {
   color: var(--accent-color-blue);
   position: absolute;
   top: 10px;
@@ -282,43 +287,39 @@ section .fase-container i.fa-spinner {
   font-size: 20px;
 }
 
-section .fase-container i.fa-arrow-right-long {
+div .fase-container i.fa-arrow-right-long {
   font-size: 20px;
   color: black;
   padding-top: 10px;
   transition: 0.5s;
 }
 
-section .fase-container.opstart-fase:hover i.fa-arrow-right-long,
-section .fase-container.design-fase:hover i.fa-arrow-right-long {
+div .fase-container.opstart-fase:hover i.fa-arrow-right-long,
+div .fase-container.design-fase:hover i.fa-arrow-right-long {
   margin-left: 250px;
 }
 
-section .fase-container.opstart-fase:hover i.fa-arrow-right-long,
-section .fase-container.design-fase:hover i.fa-arrow-right-long,
-section .fase-container.opstart-fase:hover h2,
-section .fase-container.design-fase:hover h2 {
+div .fase-container.opstart-fase:hover i.fa-arrow-right-long,
+div .fase-container.design-fase:hover i.fa-arrow-right-long,
+div .fase-container.opstart-fase:hover h2,
+div .fase-container.design-fase:hover h2 {
   color: white;
 }
 
-section .fase-container.opstart-fase:hover p,
-section .fase-container.design-fase:hover p,
-section
-  .fase-container.opstart-fase:hover
-  i:not(.fa-circle-check):not(.fa-spinner),
-section
-  .fase-container.design-fase:hover
-  i:not(.fa-circle-check):not(.fa-spinner) {
-  color: #a8a8a8;
+div .fase-container.opstart-fase:hover p,
+div .fase-container.design-fase:hover p,
+div .fase-container.opstart-fase:hover i:not(.fa-circle-check):not(.fa-spinner),
+div .fase-container.design-fase:hover i:not(.fa-circle-check):not(.fa-spinner) {
+  color: #bfbfbf;
 }
 
-section .fase-container h2 {
+div .fase-container h2 {
   font: var(--heading-font);
   margin: 10px 0;
   transition: 0.5s;
 }
 
-section .fase-container p {
+div .fase-container p {
   font: var(--paragraph-font);
   max-width: 300px;
   text-align: center;
