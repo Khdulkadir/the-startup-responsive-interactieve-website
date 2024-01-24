@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="" />
@@ -20,7 +20,9 @@
     <header>
       <div class="header-wrapper">
         <div class="logo-wrapper">
-          <img src="./assets/Logo - VO.svg" alt="logo" />
+          <a href="/">
+            <img href="/" src="./assets/Logo-VO.svg" alt="logo" />
+          </a>
           <h1>Digitaal Klantenportaal</h1>
         </div>
         <nav>
@@ -28,7 +30,7 @@
             <i class="fa-solid fa-bars"></i>
           </div>
           <ul class="menu">
-            <i class="fa-solid fa-xmark"></i>
+            <li><i class="fa-solid fa-xmark"></i></li>
             <li><a href="/">Home</a></li>
             <li><a href="/dashboard">Dashboard</a></li>
             <li><a href="/projecten">Projecten</a></li>
@@ -37,6 +39,57 @@
         </nav>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="form-wrapper">
+        <form>
+          <h1 class="form">Opstartfase formulier</h1>
+
+          <label for="huisstijl">Huisstijl</label>
+          <textarea id="content" name="content" rows="4"></textarea>
+
+          <label for="huisstijlgids">Huisstijlgids:</label>
+          <input
+            type="file"
+            id="huisstijlgids"
+            name="huisstijlgids"
+            accept=".pdf, .docx"
+          />
+
+          <label for="designbrief">Designbrief:</label>
+          <textarea id="designbrief" name="designbrief" rows="4"></textarea>
+
+          <label for="logos">Logo's:</label>
+          <input
+            type="file"
+            id="logos"
+            name="logos"
+            accept=".png, .jpg, .jpeg"
+          />
+
+          <label for="lettertypes">Lettertypes:</label>
+          <input type="text" id="lettertypes" name="lettertypes" />
+
+          <label for="fonts"></label>
+          <input type="file" id="fonts" name="fonts" accept=".ttf, .otf" />
+
+          <label for="content">Content (Tekst en afbeelding):</label>
+          <textarea id="content" name="content" rows="4"></textarea>
+
+          <label for="content-upload"></label>
+          <input
+            type="file"
+            id="content-upload"
+            name="content-upload"
+            accept=".jpg, .pdf, .docx"
+          />
+          <label for="overige">Overige:</label>
+          <textarea id="overige" name="overige" rows="4"></textarea>
+
+          <button class="form" type="submit">Indienen</button>
+        </form>
+      </div>
+    </main>
+    <footer><img src="./assets/Logo-VO.svg" alt="logo" /></footer>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
