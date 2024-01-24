@@ -10,6 +10,8 @@ Digitaal klantenportaal voor webdesign bureau "Van Ons"
 Van Ons is een design en developmentbureau op het gebied van apps platforms en websites. Klanten vertrouwen hun projecten toevoegen aan Van Ons en de resultaten zijn vaak indrukwekkend.
 Van Ons heeft gemerkt dat de klanten behoeften hebben aan een portaal waarop zij eenvoudig hun wensen voor hun project kunnen uiten en de voortgang van hun project kunnen volgen. Dit hebben wij tot werkelijkheid gebracht met het digitale klantenportaal. Klanten kunnen de fase waarin hun project bevindt eenvoudig volgen en feedback geven.
 
+https://khdulkadir.github.io/the-startup-responsive-interactieve-website/
+
 ## Kenmerken
 
 De site is met HTML, CSS en Javascript gemaakt.
